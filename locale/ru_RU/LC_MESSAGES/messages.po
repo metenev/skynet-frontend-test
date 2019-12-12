@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-12 13:53+0300\n"
+"PO-Revision-Date: 2019-12-12 13:53+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 2.1\n"
+
+#: C:\OSPanel\domains\skynet-front.test\classes\model\Plan.php:24
+#, php-format
+msgid "$%d/month"
+msgstr "%d ₽/мес"
+
+#: C:\OSPanel\domains\skynet-front.test\classes\model\Tariff.php:28
+#, php-format
+msgid "%d Mbit/s"
+msgstr "%d Мбит/с"
+
+#: C:\OSPanel\domains\skynet-front.test\classes\model\Plan.php:18
+#: C:\OSPanel\domains\skynet-front.test\views\Tariff\Plan.php:12
+#, php-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d месяц"
+msgstr[1] "%d месяца"
+msgstr[2] "%d месяцев"
+
+#: C:\OSPanel\domains\skynet-front.test\views\HTTP\Exception\404.php:29
+msgid "Go to Homepage"
+msgstr "Перейти на главную"
+
+#: C:\OSPanel\domains\skynet-front.test\views\HTTP\Exception\404.php:27
+msgid "Page not found"
+msgstr "Страница не найдена"
+
+#: C:\OSPanel\domains\skynet-front.test\views\Tariff\Plan.php:12
+#, php-format
+msgid "Payment period &ndash; %s"
+msgstr "Период оплаты &ndash; %s"
+
+#: C:\OSPanel\domains\skynet-front.test\views\Tariff\Plan.php:28
+msgid "Select"
+msgstr "Выбрать"
+
+#: C:\OSPanel\domains\skynet-front.test\classes\model\Plan.php:22
+#, php-format
+msgid "Single payment &ndash; $%d"
+msgstr "Разовый платёж &ndash; %d ₽"
+
+#: C:\OSPanel\domains\skynet-front.test\views\Tariff.php:4
+#: C:\OSPanel\domains\skynet-front.test\views\Tariff\ListItem.php:3
+#: C:\OSPanel\domains\skynet-front.test\views\Tariff\Plan.php:8
+#, php-format
+msgid "Tariff \"%s\""
+msgstr "Тариф \"%s\""
+
+#: C:\OSPanel\domains\skynet-front.test\views\Tariff\Plan.php:4
+msgid "Tariff select"
+msgstr "Выбор тарифа"
+
+#: C:\OSPanel\domains\skynet-front.test\classes\controller\Index.php:133
+#, php-format
+msgid "active until &ndash; %s"
+msgstr "активно до &ndash; %s"
+
+#: C:\OSPanel\domains\skynet-front.test\classes\model\Tariff.php:26
+msgid "find out more at www.sknt.ru"
+msgstr "узнать подробнее на сайте www.sknt.ru"
+
+#: C:\OSPanel\domains\skynet-front.test\classes\model\Plan.php:26
+#, php-format
+msgid "profit &ndash; $%d"
+msgstr "скидка &ndash; %d ₽"
+
+#: C:\OSPanel\domains\skynet-front.test\classes\model\Plan.php:27
+#, php-format
+msgid "to debit &ndash; $%d"
+msgstr "со счета спишется &ndash; %d ₽"
+
+#: C:\OSPanel\domains\skynet-front.test\classes\controller\Index.php:132
+msgid "today"
+msgstr "сегодня"
+
+#: C:\OSPanel\domains\skynet-front.test\classes\controller\Index.php:132
+#, php-format
+msgid "will take effect &ndash; %s"
+msgstr "вступит в силу &ndash; %s"

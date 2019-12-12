@@ -1,0 +1,20 @@
+{
+    "name": "metenev/skynet-front.test",
+    "description": "Frontend test for the SkyNet",
+    "type": "project",
+    "license": "GPL 3.0",
+    "authors": [
+        {
+            "name": "Dmitry Metenyov",
+            "email": "metenyov.dmitriy@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SkyNetFront\\": "classes"
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^4.0"
+    }
+}

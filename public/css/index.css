@@ -1,0 +1,304 @@
+
+:root {
+    --color-background: #efeff4;
+    --color-text: #4d575d;
+    --color-border: #c8c7cc;
+    --color-green: #82c12b;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-background);
+    font: 24px/28px 'Arial', sans-serif;
+    color: var(--color-text);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    color: #000000;
+}
+
+@media (min-width: 640px) {
+    .container {
+        padding: 30px;
+    }
+}
+
+/* @media (min-width: 1024px) {
+    max-w
+} */
+/* 640-1023; 1024-... */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (min-width: 640px) {
+    .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+
+.row > [class*="col-"] {
+    width: 100%;
+    margin-bottom: 40px;
+}
+@media (min-width: 640px) {
+    .row > [class*="col-"] {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+    .row > [class*="col-md-6"] {
+        width: 50%;
+    }
+}
+@media (min-width: 1024px) {
+    .row > [class*="col-lg-4"] {
+        width: 33.33333%;
+    }
+}
+
+#views {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#views .view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transform: translateX(105%);
+    transition: transform 0.4s ease-in-out;
+    background-color: var(--color-background);
+}
+#views .view.visible {
+    transform: translateX(0);
+}
+#views .view.hidden {
+    transform: translateX(-100%);
+}
+#views .view.hidden.back {
+    transform: translateX(105%);
+}
+
+/* Specific styles */
+
+.button-buy {
+    display: block;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1em;
+    background-color: var(--color-green);
+    border: none;
+    color: #ffffff;
+}
+
+.list-item {
+    padding: 30px 0 30px 30px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: var(--color-border);
+    border-width: 1px 0 1px;
+}
+
+.list-item a {
+    color: #007aff;
+    text-decoration: none;
+}
+
+.list-item header {
+    /* padding-right: 30px; */
+    padding-bottom: 26px;
+    border-bottom: 1px solid var(--color-border);
+}
+.list-item header h2 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #82c12b;
+}
+
+.list-item .body-button {
+    display: block;
+    padding: 24px 50px 24px 30px;
+    margin-left: -30px;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+.list-item .body-button::after {
+    content: '';
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    border-style: solid;
+    border-width: 0.1em 0.1em 0 0;
+    border-color: var(--color-border);
+    opacity: 0.65;
+    transform: rotate(45deg) translateY(-50%);
+}
+.list-item .body-button:hover::after,
+.list-item .body-button:focus::after {
+    opacity: 1;
+}
+.list-item .body-button:active {
+    background-color: #edecee;
+}
+.list-item .body-button:last-child {
+    margin-bottom: -30px;
+}
+
+.list-item .body-button h3 {
+    margin-top: 0;
+}
+.list-item .body-button p:last-child {
+    margin-bottom: 0;
+}
+
+.list-item .badge-speed {
+    display: inline-block;
+    padding: 0.4em 0.6em 0.4em 30px;
+    margin: -0.4em auto 0.6em -30px !important;
+    font-size: inherit;
+    color: #ffffff;
+}
+.list-item .price {
+    margin-top: 0;
+    font-weight: 600;
+}
+.list-item .options {
+    font-size: 24px;
+}
+
+.list-item footer {
+    padding-top: 24px;
+    padding-right: 30px;
+    margin-bottom: -2px;
+    border-top: 1px solid var(--color-border);
+    font-size: 20px;
+    line-height: 24px;
+}
+
+@media (min-width: 640px) {
+    .list-item {
+        border-left-width: 1px;
+        border-right-width: 1px;
+    }
+}
+@media (max-width: 639px) {
+    *[class*="col"]:first-child .list-item {
+        border-top-width: 0;
+    }
+    header ~ .row > *[class*="col"]:first-child .list-item {
+        border-top-width: 1px;
+    }
+}
+
+.tariff-single > header,
+.plan-single > header {
+    position: relative;
+    padding: 24px 0;
+    margin-bottom: 70px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: var(--color-border);
+    border-width: 0 0 1px;
+}
+.tariff-single > header h1,
+.plan-single > header h1 {
+    position: relative;
+    font-size: inherit;
+    text-align: center;
+    margin: 0;
+}
+.tariff-single > header .button-back,
+.plan-single > header .button-back {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    text-decoration: none;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+}
+.tariff-single > header .button-back::after,
+.plan-single > header .button-back::after {
+    content: '';
+    display: block;
+    width: 0.7em;
+    height: 0.7em;
+    margin-left: 0.4em;
+    border-style: solid;
+    border-width: 0.15em 0.15em 0 0;
+    border-color: var(--color-green);
+    transform-origin: center;
+    transform: rotate(-135deg);
+    pointer-events: none;
+}
+.tariff-single .list-item .details,
+.plan-single .list-item .details {
+    text-transform: lowercase;
+}
+
+@media (min-width: 640px) {
+    .tariff-single > header,
+    .plan-single > header {
+        border-width: 1px;
+    }
+}
+
+.plan-single {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.plan-single .list-item {
+    margin-top: auto;
+}
+.plan-single .list-item header h2 {
+    font-weight: 700;
+}
+.plan-single .list-item article .info {
+    font-size: 24px;
+    line-height: 1.2em;
+    margin: 0.8em 0 0;
+}
+.plan-single .list-item .details-secondary {
+    color: #aaaaaa;
+    text-transform: lowercase;
+}
+
+@media (min-width: 640px) {
+    .plan-single .list-item {
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 639px) {
+    .plan-single .list-item {
+        border-bottom-width: 0;
+    }
+}
